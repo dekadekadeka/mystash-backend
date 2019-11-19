@@ -10,6 +10,7 @@ Pattern.destroy_all
 Notion.destroy_all
 Yarn.destroy_all
 Fabric.destroy_all
+Project.destroy_all
 
 User.create(
     name: "Deka",
@@ -39,7 +40,9 @@ end
         name: Faker::Commerce.product_name,
         brand: Faker::Beer.brand,
         size: Faker::Measurement.height,
-        description: Faker::Company.bs
+        color: Faker::Commerce.color,
+        description: Faker::Company.bs,
+        user_id: User.all.sample.id
     )
 end
 
@@ -50,7 +53,8 @@ end
         color: Faker::Commerce.color,
         size: rand(6),
         lot: Faker::Alphanumeric.alphanumeric(5),
-        pic: "https://via.placeholder.com/150?text=Yarn+Pic"
+        pic: "https://via.placeholder.com/150?text=Yarn+Pic",
+        user_id: User.all.sample.id
     )
 end
 
@@ -61,6 +65,14 @@ end
         size: Faker::Measurement.length,
         description: Faker::Company.bs,
         name: Faker::Cannabis.strain,
-        pic: "https://via.placeholder.com/150?text=Yarn+Pic"
+        pic: "https://via.placeholder.com/150?text=Fabric+Pic",
+        user_id: User.all.sample.id
+    )
+end
+
+10.times do
+    Project.create(
+        user_id: User.all.sample.id,
+        pattern_id: Pattern.all.sample.id
     )
 end
