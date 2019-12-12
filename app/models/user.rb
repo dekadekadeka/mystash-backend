@@ -8,4 +8,6 @@ class User < ApplicationRecord
     has_many :yarns
     has_many :notions
     has_many :fabrics
+    has_many :needles
+    has_many :flosses
 end
