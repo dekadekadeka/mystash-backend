@@ -11,9 +11,11 @@ While it is very easy to keep track of which patterns you want to buy that day (
 myStash is an app to track:
 
 * Which sewing patterns you own
-* What fabric, yarn, and different notions you own
+* What fabric, yarn, thread, needles, and different notions you own
 
-Thread/zippers/buttons/etc. are meant to be tracked under "Notions". Adding a "Supplies" model seemed redundant. 
+Zippers/buttons/etc. are meant to be tracked under "Notions". Adding a "Supplies" model seemed redundant as they would be nearly identical. 
+
+At first I meant to include thread in the "Notions" model, but looking at how much thread the average crafter owns I decided it needed its own model as well. That is how I found out "Thread" is a reserved word on Rails. I am highly assuming that "String" is one as well, so I named the model "Floss".
 
 When this is finished, a user should be able to:
 

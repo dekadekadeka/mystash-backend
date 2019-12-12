@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :fabrics, only: [:index, :show, :update, :create, :destroy]
   resources :notions, only: [:index, :show, :update, :create, :destroy]
   resources :yarns, only: [:index, :show, :update, :create, :destroy]
+  resources :flosses, only: [:index, :show, :update, :create, :destroy]
+  resources :needles, only: [:index, :show, :update, :create, :destroy]
 end
