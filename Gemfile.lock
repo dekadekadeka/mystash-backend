@@ -1059,7 +1059,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  aws-sdk
+  aws-sdk (~> 3)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug

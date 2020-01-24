@@ -20,7 +20,7 @@ gem 'jwt'
 
 # Use Active Storage variant
 # gem 'image'_processing', '~> 1.2'
-gem "aws-sdk"
+gem 'aws-sdk', '~> 3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
