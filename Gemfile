@@ -17,7 +17,7 @@ gem 'puma', '~> 4.3'
 gem 'bcrypt', '~> 3.1.7'
 gem 'active_model_serializers'
 gem 'jwt'
-
+gem "nokogiri", ">= 1.10.8"
 # Use Active Storage variant
 # gem 'image'_processing', '~> 1.2'
 # gem 'aws-sdk', '~> 3'
