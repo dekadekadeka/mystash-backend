@@ -20,7 +20,7 @@ gem 'jwt'
 gem "nokogiri", ">= 1.10.8"
 # Use Active Storage variant
 # gem 'image'_processing', '~> 1.2'
-# gem 'aws-sdk', '~> 3'
+gem 'graphql'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -32,6 +32,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'faker'
+  gem "graphiql-rails"
 end
 
 group :development do
