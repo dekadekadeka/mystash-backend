@@ -31,7 +31,7 @@ class FabricsController < ApplicationController
 
     def destroy
         @fabric = Fabric.find(params[:id])
-        @pic.destroy
+        @fabric.destroy
     end
 
     private
