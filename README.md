@@ -2,7 +2,7 @@
 
 myStash Backend!
 
-Ruby version 2.6.3, Rails version 6.0.1, PostgreSQL DB
+Ruby version 2.7.1, Rails version 6.0.1, PostgreSQL DB
 
 Apart from coding, I love crafting. Sewing, crochet, and knitting, to be more specific. 
 
